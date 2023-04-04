@@ -1,0 +1,108 @@
+.div-landing-page {
+  text-align: center;
+}
+.landing-page-img {
+  width: 55%;
+  position: relative;
+  top: -9.5rem;
+}
+
+.img-container-landing {
+  position: relative;
+  top: -11.5rem;
+}
+.img-cover {
+  font-size: 3rem;
+  background-color: #69908e;
+  transform: rotate(-3deg);
+  color: white;
+  position: relative;
+  width: 50.5%;
+  top: -15rem;
+  margin-left: 25%;
+}
+.card-landing-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  padding: 2rem;
+  margin-left: 6rem;
+}
+.card-landing {
+  width: 200px;
+  height: 390px;
+  border: 2px solid #69908e;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -17rem;
+  cursor: pointer;
+}
+.product-heading {
+  font-size: 2rem;
+  position: relative;
+  top: -15rem;
+}
+.card-landing-img {
+  width: 80%;
+}
+
+.landing-label {
+  font-size: 8rem;
+  width: 100%;
+  color: #69908e;
+}
+.landing-caption {
+  position: relative;
+  top: -19rem;
+  right: 35%;
+  font-size: 1.5rem;
+  font-style: bold;
+}
+.img-landing-2 {
+  width: 50%;
+  height: auto;
+}
+.landing-arrow {
+  position: absolute;
+  top: 35rem;
+  right: 10rem;
+  font-size: 5rem;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .landing-caption {
+    position: relative;
+    top: -14rem;
+    right: 35%;
+    font-size: 0.5rem;
+    font-style: bold;
+  }
+  .landing-page-img {
+    width: 100%;
+    position: relative;
+    top: -2rem;
+  }
+  .card-landing-container,
+  .product-deading-landing {
+    display: none;
+  }
+  .img-landing-2 {
+    width: 50%;
+    height: auto;
+  }
+  .img-cover {
+    font-size: 1rem;
+    margin-top: 5rem;
+  }
+  .landing-label {
+    font-size: 3rem;
+  }
+  .img-container-landing {
+    position: relative;
+    top: -5.5rem;
+  }
+}

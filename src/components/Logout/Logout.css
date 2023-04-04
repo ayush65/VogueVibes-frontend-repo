@@ -1,0 +1,13 @@
+/** @format */
+
+.logout-img {
+  width: 50%;
+  border-radius: 30px;
+}
+
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

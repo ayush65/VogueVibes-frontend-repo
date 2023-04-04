@@ -1,0 +1,29 @@
+/** @format */
+
+.signup-div-container {
+  width: 300px;
+  height: 250px;
+  font-size: 1.5rem;
+  background-color: #4a718a;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.signup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-input {
+  width: 13rem;
+  height: 2rem;
+}
+
+.signup-page-img {
+  width: 60%;
+}

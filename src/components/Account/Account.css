@@ -1,0 +1,94 @@
+/** @format */
+
+.account-container {
+  width: 400px;
+  height: 420px;
+  background-color: #2f4858;
+  padding: 1rem;
+  border-radius: 30px;
+  position: relative;
+  font-size: 1rem;
+}
+
+.img-user {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.account-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-account {
+  margin-top: 3rem;
+  position: absolute;
+  background-color: #2f4858;
+  border: 1px solid #fff;
+  padding: 1rem 3rem;
+  margin-left: -4rem;
+  text-decoration: none;
+  color: white;
+}
+
+.account-baseimg {
+  width: 200px;
+  height: 200px;
+}
+
+.account-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  margin: 2rem;
+  width: 85%;
+}
+
+.modal-bio {
+  height: 60px;
+}
+
+.btn-account:hover {
+  background-color: #29bf12;
+}
+
+.btn-edit {
+  position: absolute;
+  right: 2%;
+  font-size: 2rem;
+  z-index: 500;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  color: #29bf12;
+  transition: color 2s;
+}
+
+.button-43 {
+  background-color: #2f4858;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 90%;
+  border: 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+}

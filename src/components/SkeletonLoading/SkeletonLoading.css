@@ -1,0 +1,29 @@
+/** @format */
+
+.SkeletonLoading {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.SkeletonLoading-content {
+  width: 50%;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.app-img {
+  width: 60%;
+}
+@media all and (max-width: 1450px) {
+  .app-img {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .app-img {
+    width: 30%;
+  }
+}

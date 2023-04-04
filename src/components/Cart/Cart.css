@@ -1,0 +1,11 @@
+/** @format */
+
+.cart {
+  width: 100%;
+  height: 230vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}

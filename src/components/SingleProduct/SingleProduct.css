@@ -1,0 +1,119 @@
+.single-product-container {
+  display: flex;
+  gap: 3rem;
+}
+.single-product-div1 {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+.single-product-image {
+  width: 400px;
+  height: 400px;
+}
+.product-div2 {
+  margin-left: 450px;
+}
+.link-product {
+  width: 2.2rem;
+  color: black;
+  background-color: #2f4858;
+  padding: 1rem;
+  color: white;
+  margin-left: 2rem;
+  border-radius: 30px;
+}
+.div-coupons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.color-grey {
+  color: grey;
+  font-style: bold;
+  font-weight: 900;
+}
+
+.color-grey-price {
+  color: grey;
+  font-style: bold;
+  font-weight: 900;
+  text-decoration: line-through;
+}
+
+.product-rating {
+  background-color: green;
+  color: white;
+  padding: 0.3rem;
+}
+.green-text {
+  color: green;
+  font-style: bold;
+  font-weight: 900;
+}
+.single-product-price {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.single-product-container-buttons {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.btn--single-product-cart {
+  width: 50%;
+  height: 3rem;
+  background-color: #ff9f00;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.input-product {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 10rem;
+  height: 2rem;
+}
+.btn--single-product-wishlist {
+  width: 50%;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #fb641b;
+}
+
+@media (max-width: 960px) {
+  .btn--single-product-cart {
+    width: 40%;
+  }
+  .btn--single-product-wishlist {
+    width: 40%;
+  }
+
+  .single-product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .single-product-container-buttons {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .single-product-div1 {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .product-div2 {
+    margin-left: 10px;
+    width: 95%;
+  }
+  .single-product-image {
+    width: 90%;
+    height: 350px;
+  }
+}

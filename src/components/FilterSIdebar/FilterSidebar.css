@@ -1,0 +1,55 @@
+/** @format */
+
+.filter-sidebar {
+  position: absolute;
+  right: 0;
+  top: 6rem;
+  margin-right: 2rem;
+}
+
+.filter-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transform: transform 3s ease-in;
+}
+
+.btn-clear {
+  margin-top: 3.5rem;
+}
+
+.ui-filter {
+  position: absolute;
+  right: -2rem;
+  height: 90vh;
+  width: 15rem;
+  z-index: 1100;
+  background-color: white;
+  padding: 0.5rem;
+}
+.filter-div3 {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 0.5rem;
+}
+
+.filter-div1,
+.filter-div2 {
+  font-size: 1.5rem;
+}
+
+.filter-div2 {
+  margin-top: 2rem;
+}
+.filter-div2-content {
+  margin-top: 2rem;
+  width: 100%;
+
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-div2-content1 {
+  margin-top: 0.5rem;
+}
