@@ -52,7 +52,7 @@ const FilterSIdebar = () => {
               onClick={() => {
                 dispatch({ type: "CLEAR_FILTER" });
               }}
-              className=" radio_text btn-clear"
+              className="btn-cleared"
             >
               Clear All
             </button>

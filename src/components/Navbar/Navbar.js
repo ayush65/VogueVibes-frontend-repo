@@ -28,8 +28,6 @@ const Navbar = () => {
 
     const parsedObj = JSON.parse(str);
 
-    console.log(parsedObj);
-
     setLogin(parsedObj);
   }, [login]);
 

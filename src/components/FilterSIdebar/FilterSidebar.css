@@ -17,6 +17,13 @@
   margin-top: 3.5rem;
 }
 
+.btn-cleared {
+  width: 6rem;
+  padding: 0.5rem;
+  background-color: white;
+  text-align: center;
+}
+
 .ui-filter {
   position: absolute;
   right: -2rem;

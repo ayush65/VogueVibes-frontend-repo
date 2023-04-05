@@ -20,7 +20,6 @@ const FilterProvider = ({ children }) => {
       let response = await axios.get(
         "https://vogue-vibes-backend-repo.vercel.app/api/v1/products"
       );
-      console.log(response.data);
       dispatch({
         type: "UPDATE_PRODUCTS",
         payload: { products: response.data },

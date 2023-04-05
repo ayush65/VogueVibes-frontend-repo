@@ -35,6 +35,35 @@ const SingleProduct = () => {
     localStorage.setItem("wishlistObj", wishlistObj);
   }, [array, WishlistArray]);
 
+  const [points, setPoints] = useState(0); // initialize points state to 0
+
+  function generateRandomNumber() {
+    const randomNumber = Math.floor(Math.random() * 5) + 1;
+    switch (randomNumber) {
+      case 1:
+        setPoints(points + 1);
+        break;
+      case 2:
+        setPoints(points + 2);
+        break;
+      case 3:
+        setPoints(points + 3);
+        break;
+      case 4:
+        setPoints(points + 4);
+        break;
+      case 5:
+        setPoints(points + 5);
+        break;
+      default:
+        break;
+    }
+  }
+
+  useEffect(() => {
+    generateRandomNumber();
+  }, []);
+
   return (
     <div className="single-product-container">
       <div className="single-product-div1">
@@ -108,6 +137,7 @@ const SingleProduct = () => {
           </button>
         </div>
       </div>
+
       <div className="product-div2">
         <h1>{data.name}</h1>
         <p className="green-text">Special Price</p>
@@ -118,7 +148,7 @@ const SingleProduct = () => {
           <p className="green-text">15 % off</p>
         </div>
         <div className="single-product-price">
-          <p className="product-rating">4.1 ★</p>{" "}
+          <p className="product-rating">{points} ★</p>{" "}
           <p className="color-grey">
             {Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000} ratings
           </p>
@@ -126,6 +156,18 @@ const SingleProduct = () => {
             {" "}
             {Math.floor(Math.random() * (1000 - 500 + 1)) + 500} reviews
           </p>
+        </div>
+        <h3>Description</h3>
+        <div className="">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
         </div>
         <h3>Available offers</h3>
         <div className="div-coupons">

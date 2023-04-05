@@ -1,10 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./LandingPage.css";
 import { TiArrowSortedDown } from "react-icons/ti";
 import Footer from "./Footer";
 import MainImg from "./img.jpg";
 import LandingImg from "./landing-img.png";
 import { useFilter } from "../../Context/FilterContext";
+import { Navigate } from "react-router-dom";
 
 const Landingpage = () => {
   const ref = useRef(null);
@@ -17,9 +18,23 @@ const Landingpage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(6);
 
+  const [singleProduct, setSingleProduct] = useState([]);
+
+  useEffect(() => {
+    const singleProd = JSON.stringify(singleProduct);
+
+    localStorage.setItem("singleProduct", singleProd);
+  }, [singleProduct]);
+
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = state.product.slice(indexOfFirstPost, indexOfLastPost);
+
+  const [redirectToAnotherPage, setRedirectToAnotherPage] = useState(false);
+
+  if (redirectToAnotherPage) {
+    return <Navigate to="/singleproduct" />;
+  }
 
   return (
     <div className="div-landing-page">
@@ -37,8 +52,19 @@ const Landingpage = () => {
         {" "}
         {currentPosts.slice(0, 4).map((item, i) => {
           return (
-            <div className="card-landing" key={i}>
-              <img src={item.imgUrl} alt="" className="card-landing-img" />
+            <div
+              className="card-landing"
+              key={i}
+              onClick={() => {
+                setSingleProduct(item);
+              }}
+            >
+              <img
+                src={item.imgUrl}
+                alt=""
+                className="card-landing-img"
+                onClick={() => setRedirectToAnotherPage(!redirectToAnotherPage)}
+              />
               <h2>{item.name}</h2>
               <p>Rs{item.discountedPrice}</p>
             </div>
@@ -55,7 +81,6 @@ const Landingpage = () => {
         <TiArrowSortedDown />
         <div ref={ref}></div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
