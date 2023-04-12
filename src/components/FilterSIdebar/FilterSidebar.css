@@ -29,6 +29,8 @@
   height: 90vh;
   width: 15rem;
   z-index: 1100;
+  background-color: white;
+  color: #333;
   padding: 0.5rem;
 }
 .filter-div3 {
