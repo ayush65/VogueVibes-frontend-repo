@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./LandingPage.css";
 import { TiArrowSortedDown } from "react-icons/ti";
-import Footer from "./Footer";
 import MainImg from "./img.jpg";
 import LandingImg from "./landing-img.png";
 import { useFilter } from "../../Context/FilterContext";
 import { Navigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const Landingpage = () => {
   const ref = useRef(null);
@@ -81,6 +81,7 @@ const Landingpage = () => {
         <TiArrowSortedDown />
         <div ref={ref}></div>
       </div>
+      <Footer />
     </div>
   );
 };
