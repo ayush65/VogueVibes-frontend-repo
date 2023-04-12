@@ -12,7 +12,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ mode, setMode }) => {
   const [show, setShow] = useState(false);
 
   const [login, setLogin] = useState(
@@ -31,17 +31,12 @@ const Navbar = () => {
     setLogin(parsedObj);
   }, [login]);
 
-  const [mode, setMode] = useState(
-    () => localStorage.getItem("mode") || "light"
-  );
-
   useEffect(() => {
     localStorage.setItem("mode", mode);
   }, [mode]);
 
   function toggleMode() {
     setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-    window.location.reload();
   }
 
   return (

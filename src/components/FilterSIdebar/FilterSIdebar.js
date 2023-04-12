@@ -12,10 +12,6 @@ const FilterSIdebar = () => {
   const { state, dispatch } = useFilter();
   const { price, category, sort } = state;
 
-  const [mode, setMode] = useState(
-    () => localStorage.getItem("mode") || "light"
-  );
-
   const [categoryArr, setCategoryArr] = useState([]);
 
   // Triggered when the value gets updated while scrolling the slider:
@@ -28,13 +24,7 @@ const FilterSIdebar = () => {
   };
 
   return (
-    <div
-      className={
-        mode === "dark"
-          ? " dark-mode filter-sidebar "
-          : "  light-mode  filter-sidebar"
-      }
-    >
+    <div className="filter-sidebar ">
       {show ? (
         <div className="filter-icon">
           <ImCross onClick={() => setShow(false)} />

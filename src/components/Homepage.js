@@ -9,12 +9,8 @@ import Pagination from "./Pagination/Pagination";
 import SearchBar from "./SearchBar/SearchBar";
 
 const Homepage = () => {
-  const [mode, setMode] = useState(
-    () => localStorage.getItem("mode") || "light"
-  );
-
   return (
-    <div className={mode === "dark" ? "dark-mode" : "light-mode"}>
+    <div>
       {" "}
       <SearchBar />
       {/* <Card /> */}

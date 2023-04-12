@@ -13,15 +13,9 @@ const Cart = () => {
     setCartArray(parsedObj);
   }, []);
 
-  const [mode, setMode] = useState(
-    () => localStorage.getItem("mode") || "light"
-  );
-
   return (
     <>
-      <div
-        className={mode === "dark" ? " cart dark-mode " : "  cart light-mode "}
-      >
+      <div>
         {" "}
         <CartProducts data={cartArray} />
       </div>
