@@ -15,7 +15,6 @@ function App() {
     <div className={mode === "dark" ? "dark-mode App" : "light-mode App"}>
       <Navbar setMode={setMode} mode={mode} />
       <RoutesPath />
-      <Footer />
     </div>
   );
 }

@@ -2,10 +2,11 @@
 
 .cart {
   width: 100%;
-  height: 230vh;
+  height: 530%;
   position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }

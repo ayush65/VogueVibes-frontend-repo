@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import { useFilter } from "../Context/FilterContext";
 import Card from "./Cards/Card";
 import FilterSIdebar from "./FilterSIdebar/FilterSIdebar";
-import Footer from "./LandingPage/Footer";
 import Pagination from "./Pagination/Pagination";
 import SearchBar from "./SearchBar/SearchBar";
+import Footer from "./Footer/Footer";
 
 const Homepage = () => {
   return (
@@ -15,6 +15,7 @@ const Homepage = () => {
       <SearchBar />
       {/* <Card /> */}
       <FilterSIdebar />
+      <Footer />
     </div>
   );
 };

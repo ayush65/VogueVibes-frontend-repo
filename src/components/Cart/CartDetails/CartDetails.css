@@ -1,13 +1,11 @@
 /** @format */
 
 .CartDetails {
-  height: 100px;
+  height: 500px;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8rem;
   color: #fff;
+  text-align: center;
 }
 .cart-details-container {
   position: absolute;
@@ -17,6 +15,7 @@
   background-color: #2f4858;
   width: 500px;
   border: 1px solid #fff;
+  text-align: center;
 }
 
 .place-order-btn {
